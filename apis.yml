@@ -1,8 +1,23 @@
 aid: monograph
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/monograph.png
 name: Monograph
-description: 'Monograph is a company surfaced as a portfolio company of homebrew, index-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: developer-tools. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Monograph is firm-management software purpose-built for architecture and
+  engineering (A&E) practices, unifying project management, resourcing and staffing,
+  time tracking, budgeting, invoicing and client payments in one connected system.
+  Used by thousands of US-based A&E firms, it integrates with QuickBooks Online, Stripe,
+  Google Workspace and Microsoft 365, but publishes no public developer API, webhooks,
+  or SDKs. Backed by Homebrew and Index Ventures.'
 url: https://raw.githubusercontent.com/api-evangelist/monograph/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,13 +25,21 @@ x-backed-by:
 - homebrew
 - index-ventures
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Developer Tools
+- Architecture
+- Engineering
+- AEC
+- Firm Management
+- Project Management
+- Time Tracking
+- Invoicing
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/monograph-domain-security.yml
 - type: Website
   url: https://monograph.com
+- type: Support
+  url: https://support.monograph.com/en/
+- type: Blog
+  url: https://monograph.com/blog
+- type: Pricing
+  url: https://monograph.com/pricing
+- type: GettingStarted
+  url: https://monograph.com/book-a-demo
+- type: Login
+  url: https://app.monograph.com/
+- type: ChangeLog
+  url: https://monograph.canny.io/changelog
+- type: TermsOfService
+  url: https://monograph.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://monograph.com/privacy-policy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
